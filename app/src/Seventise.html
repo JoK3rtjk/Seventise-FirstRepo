@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootswatch/dist/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SEVENTISE</title>
+  </head>
+  <body>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SEVENTISE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+      
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+                <a class="nav-link" href="#dashboard">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#register">Offer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#CAForm">Auction</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="#marketplace">Marketplace</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h4 id="errormsg"></h4><br>
+
+       <div class="jumbotron jumbotron-fluid" id="HEADER">
+        <div class="container">
+          <h1 class="display-4">ALPHA DEMO</h1>
+          <p class="lead">SEVENTISE: Primary Market on blockchain</p>
+        </div>
+      </div>
+
+
+
+    
+
+
+     <!-- Use this after testing for nice css -->
+     <div class="container">
+      <h1 id="dashboard" class="header1"><br>Dashboard</h1>
+      <div id="dashboardP" class="row">
+        <div class="round-container">
+          <h4 id="address"></h4>
+        </div>
+      </div>
+      <h4 id="dashboard-h4">Assets Owned: </h4>
+      <div class="row" id="token-sect">
+      </div>
+     </div>
+
+<!-- Bond registration form -->
+
+
+
+
+  <!-- Use this for nice css after testing -->
+  <div class="container">
+    <h1 id="register" class="header1" ><br>Offer Bonds</h1>
+    <div class="offer-description-container row">
+      <p> Use this to register the bond to issue </p>
+    </div>
+    <div class="offer-container row">
+    <form id="RegisterForm">
+      <div class="form-group row" style="padding-top: 20px;">
+        <label for="name" class="col-sm-2 col-form-label fLabel">Bond Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control auct" id="BondName" placeholder="Enter Name for bond">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="ytm" class="col-sm-2 col-form-label fLabel"># of years</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control auct" id="YTM" placeholder="Enter Years to maturity">
+        </div>
+      </div>
+        <div class="form-group row">
+        <label for="Tc" class="col-sm-2 col-form-label fLabel">Target</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control auct" id="TC" placeholder="Enter Targeted Capital to raise for bond">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="button" class="btn btn-outline-secondary round-btn" onclick="App.createNewIssue()">Register</button>
+        </div>
+      </div>
+    </form>
+  </div>  
+</div>
+<!-- Auction start form -->
+
+    <br><br>
+    <p></p>
+   
+
+  <!-- Use this for nice css -->
+  <div class="container">
+    <div>
+      <h1 id="createAuction" class="header1"><br>Start Auction</h1>
+     </div>
+    <div class="auct-container row">
+      <form id="CAForm">
+        <div class="form-group row" style="padding-top: 20px;">
+          <label for="name" class="col-sm-2 col-form-label fLabel">Bond ID</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control auct" id="CA_BondID" placeholder="Enter ID of bond to start auction">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="start" class="col-sm-2 col-form-label fLabel">Start Time</label>
+          <div class="col-sm-10">
+            <input type="datetime-local" class="form-control auct" id="ST">
+          </div>
+        </div>
+          <div class="form-group row">
+          <label for="Tc" class="col-sm-2 col-form-label fLabel">End Time</label>
+          <div class="col-sm-10">
+            <input type="datetime-local" class="form-control auct" id="ET">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="button" class="btn btn-outline-secondary round-btn" onclick="App.createAuction()">Start auction</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="auct-description-container row">
+      <p> This is the place to start auction session for the bond you have register. If you have not register your bonds, head to <a href="#register">Offer</a></p>
+    </div>
+  </div>
+
+  <br><br><br>
+  <br><br><br>
+
+
+  <div class="container">
+    <h1 id="marketplace" class="header1"><br>Marketplace</h1>
+    <div class = row>
+
+      <div id = "mk" class = row>
+        </div>
+      </div>   
+  </div>
+
+<!-- Modal -->
+<div id = "mkModal"></div>
+
+      <script src="index.js"></script>
+  </body>
+</html>
+
+

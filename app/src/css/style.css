@@ -1,0 +1,233 @@
+.body{
+  font-family: 'Space Mono', monospace;
+}
+.navbar{
+  font-family: 'Space Mono', monospace;
+}
+
+/* Jumbotron at the start */
+#HEADER{
+  font-family: 'Space Mono', monospace;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position:60vh;
+  margin-top: 10px;
+  
+}
+.header1{
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+  text-decoration: none;
+  color: #abb6c2;
+}
+
+.table{
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* .dashboard-sect{
+  position: absolute;
+  background: url("../images/planet1.gif");
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+} */
+
+#dashboard-h4{
+  font-family: 'Share Tech Mono', monospace;
+}
+
+
+
+.round-container{
+  position: relative;
+  border-color: #abb6c2;
+  border-style: solid;
+  border-radius: 70px;
+  min-width: 50%;
+  width: fit-content;
+  min-height:10vh;
+  text-align: left;
+  margin-bottom: 10px;
+  left: 25%;
+
+}
+.round-container h4{
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#token-sect p{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: medium;
+  text-align: left;
+  color: #20c997;
+}
+.token-container{
+  border-color:#20c997;
+  border-style: solid;
+  width: 33%;
+  min-height: 10vh;
+  text-align: center;
+  margin: 2px;
+  border-radius: 5px;
+  position: relative;
+  right: 24px;
+}
+
+.mk-start h4{
+  width: 70%;
+  margin-top: 15px;
+  height: 50vh;
+  text-align: left;
+  /* background-image: url("../images/auction.svg"); */
+  background-repeat: no-repeat;
+  border: none;
+}
+
+
+.mk-box{
+  color: #20374c;
+  /* border-style: solid;
+  border-radius: 5px; */
+  height: fit-content;
+  width: fit-content;
+  font-family: 'Share Tech Mono', monospace;
+  /* margin: 2px; */
+  
+}
+.card-img{
+  width:auto;
+  height: 10vh;
+  justify-self: center;
+}
+.round-btn{
+  font-family: 'Share Tech Mono', monospace;
+  border-radius: 10px;
+  color: #fff;
+  float:inline-start;
+}
+
+.fLabel{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: medium;
+  text-align: left;
+}
+
+.offer-description-container{
+  text-align: right;
+  float: right;
+  width: 40%;
+  margin-top: 15px;
+}
+
+.offer-description-container p{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: large;
+}
+
+.offer-container{
+  margin-top: 10px;
+  width: 60%;
+  float: inline-start;
+  border-style: solid;
+  border-color: #20c997;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#createAuction{
+  margin-top: 20px;
+}
+
+.auct-description-container{
+  text-align: left;
+  float: inline-start;
+  width: 40%;
+  margin-top: 15px;
+}
+.auct-description-container p{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: large;
+}
+
+.auct-container{
+  margin-top: 10px;
+  width: 60%;
+  float: right;
+  border-style: solid;
+  border-color: #20c997;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+.auct{
+  background-color: #abb6c2;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+  #HEADER{
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    background-position:60vh;
+    margin-top: 10px;
+
+    
+  }
+  .round-container{
+      border-color: #abb6c2;
+      border-style: solid;
+      border-radius: 70px;
+      min-width: 50%;
+      min-height: 10vh;
+      width: 50px;
+      height:fit-content;
+      text-align: center;
+      margin-bottom: 10px; 
+  }
+  .round-container h4{
+    text-align: left;
+    margin-top: 10px;
+    font-size: small;
+    overflow: hidden;
+  }
+  .offer-description-container{
+    text-align: left;
+    float: right;
+    width: 40%;
+  }
+  .offer-container{
+    background-color:#20374c;
+    border-color: #fff;
+  }
+
+  .auct-container{
+   border-color: #fff;
+   background-color: #20374c;
+  }
+  .mk-box{
+    position: relative;
+    left: 15%;
+    color: #20374c;
+    border-style: solid;
+    border-radius: 5px;
+    height: fit-content;
+    width: fit-content;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 8px;
+    padding: 5px;
+  }
+
+  
+
+}
