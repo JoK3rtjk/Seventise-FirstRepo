@@ -5,7 +5,7 @@ MVP submission for Polygon track for Next Top Blockchain Startup
 Clone the git repository 
 
 ```
-git clone https://github.com/JoK3rtjk/Hackathon-Submission.git
+git clone https://github.com/JoK3rtjk/Seventise-FirstRepo.git
 ```
 
 Download dependencies in the root and app folders
