@@ -1,4 +1,4 @@
-# Hackathon-Submission
+# Idea-Submission
 MVP submission for Polygon track for Next Top Blockchain Startup
 # Setup
 
